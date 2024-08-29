@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brookvale AR</title>
     <link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="message"></div>
     <script>
-	
         document.getElementById('message').innerText = 'Loading AR..';
-
 
         function getParameterByName(name) {
             const url = new URL(window.location.href);
@@ -21,10 +18,12 @@
         }
 
         const redirectParam = getParameterByName('id');
-        if (redirectParam === '1') window.location.href = 'https://en.wikipedia.org/wiki/1';
-        if (redirectParam === '2') window.location.href = 'https://en.wikipedia.org/wiki/2';
-        if (redirectParam === '3') window.location.href = 'https://en.wikipedia.org/wiki/3';
-        if (redirectParam === '4') window.location.href = 'https://en.wikipedia.org/wiki/4';
+        setTimeout(() => {
+            if (redirectParam === '1') window.location.href = 'https://en.wikipedia.org/wiki/1';
+            if (redirectParam === '2') window.location.href = 'https://en.wikipedia.org/wiki/2';
+            if (redirectParam === '3') window.location.href = 'https://en.wikipedia.org/wiki/3';
+            if (redirectParam === '4') window.location.href = 'https://en.wikipedia.org/wiki/4';
+        }, 1000);
     </script>
 </body>
 </html>

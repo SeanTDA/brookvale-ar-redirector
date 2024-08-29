@@ -1,17 +1,17 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Updated font */
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #121212; /* Dark background */
+    background-color: #121212; 
 }
 
 #message {
     font-size: 24px;
-    color: #ffffff; /* White text for contrast */
-    background-color: #1f1f1f; /* Slightly lighter dark background for the message box */
+    color: #ffffff; 
+    background-color: #1f1f1f;
     padding: 20px 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
