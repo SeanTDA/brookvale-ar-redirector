@@ -9,6 +9,10 @@
 <body>
     <div id="message"></div>
     <script>
+	
+        document.getElementById('message').innerText = 'Loading AR..';
+
+
         function getParameterByName(name) {
             const url = new URL(window.location.href);
             return url.searchParams.get(name);
@@ -19,7 +23,6 @@
         if (id === '2') window.location.href = 'https://en.wikipedia.org/wiki/2';
         if (id === '3') window.location.href = 'https://en.wikipedia.org/wiki/3';
         if (id === '4') window.location.href = 'https://en.wikipedia.org/wiki/4';
-        
     </script>
 </body>
 </html>
