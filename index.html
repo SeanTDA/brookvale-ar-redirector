@@ -9,21 +9,17 @@
 <body>
     <div id="message"></div>
     <script>
-        // Print "Hello, World!" on the screen
-        document.getElementById('message').innerText = 'Hello, World!';
-
-        // Function to get URL parameters
         function getParameterByName(name) {
             const url = new URL(window.location.href);
             return url.searchParams.get(name);
         }
 
-        // Check if the "redirect" parameter equals "hello"
-        const redirectParam = getParameterByName('redirect');
-        if (redirectParam === 'hello') {
-            // Redirect to the specified Wikipedia page
-            window.location.href = 'https://en.wikipedia.org/wiki/Computer_program';
-        }
+        const redirectParam = getParameterByName('id');
+        if (id === '1') window.location.href = 'https://en.wikipedia.org/wiki/1';
+        if (id === '2') window.location.href = 'https://en.wikipedia.org/wiki/2';
+        if (id === '3') window.location.href = 'https://en.wikipedia.org/wiki/3';
+        if (id === '4') window.location.href = 'https://en.wikipedia.org/wiki/4';
+        
     </script>
 </body>
 </html>
